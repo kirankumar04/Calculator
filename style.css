@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    font-family: Roboto, sans-serif;
+}
+  
+.container{
+    width: 315px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+  
+.display{
+    width: 100%;
+    text-align: right;
+    line-height: 150px;
+    color: #ffffff;
+    font-size: 60px;
+}
+  
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.keyboard .key{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    background: #333333;
+}
+
+
+.keyboard .key.special{
+    color: #000000;
+    background: #999999;
+}
+
+
+.keyboard .key.operator{
+    background: #f39c12;
+}
+
+
+.keyboard .key.zero{
+    grid-column: 1 / 3;
+    border-radius: 50px;
+}
+
+button{
+    border: 0;
+    background: transparent;
+}
+  
